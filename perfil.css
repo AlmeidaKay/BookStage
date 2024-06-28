@@ -1,0 +1,272 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCFAF9;
+    color: #333;
+}
+
+   /* Cabeçalho */
+
+.logo a {
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #F1EDE8;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo img {
+    height: 70px;
+    margin-right: 10px; 
+}
+header .logo .title {
+    font-family: "Sacramento", cursive;
+    font-size: 2.5em;
+    color: #8F7155;
+    margin-right: 230px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    margin: 0 20px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+    position: relative;
+}
+header nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: width .3s;
+}
+header nav ul li a:hover::after {
+    width: 100%;
+}
+header .icons img {
+    height: 25px;
+}
+
+.breadcrumb {
+    background-color: #F1EDE8;
+    padding: 20px 80px;
+    font-size: 1em;
+    color: #666;
+}
+
+   /* Historico de nav */
+.breadcrumb a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+   /* Perfil */
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+    align-items: flex-start;
+}
+
+.profile-info {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-info h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5em;
+    color: #8F7155;
+    margin: 10px 0;
+}
+
+.profile-info .email {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+   /* Botoes */
+.edit-button, .delete-button {
+    background-color: #8F7155;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.delete-button {
+    background-color: #D9534F;
+}
+
+.profile-details {
+    flex: 2;
+    padding-left: 40px;
+}
+
+.profile-details h3 {
+    font-size: 1.3em;
+    color: #8F7155;
+    margin-bottom: 15px;
+}
+
+.profile-details p, .profile-details ul {
+    font-size: 1.0em;
+    margin-bottom: 10px;
+}
+
+.profile-details ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+   /* Rodapé */
+footer {
+    background-color: #F1EDE8;
+    color: #333;
+    padding: 20px 0;
+    font-size: 0.9em;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: -80px;
+  }
+  
+  
+  .footer-links, .footer-help, .footer-suggestions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-links h4, .footer-help h4, .footer-suggestions h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .footer-links ul, .footer-help ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li, .footer-help li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a, .footer-help a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-suggestions form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-suggestions input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  .footer-suggestions button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-suggestions button:hover {
+    background-color: #666;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #333;
+  }
+
+  /* Icones */
+
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+     font-weight: normal;
+     font-style: normal;
+     font-size: 35px;
+     margin: 10px;
+     line-height: 1;
+     letter-spacing: normal;
+     text-transform: none;
+     display: inline-block;
+     white-space: nowrap;
+     word-wrap: normal;
+     direction: ltr;
+     color: black;
+ }

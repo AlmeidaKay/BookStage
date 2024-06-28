@@ -1,0 +1,235 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCFAF9;
+    color: #333;
+}
+
+   /* Cabeçalho */
+.logo a {
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #F1EDE8;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo img {
+    height: 70px;
+    margin-right: 10px; 
+}
+header .logo .title {
+    font-family: "Sacramento", cursive;
+    font-size: 2.5em;
+    color: #8F7155;
+    margin-right: 230px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    margin: 0 20px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+    position: relative;
+}
+header nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: width .3s;
+}
+header nav ul li a:hover::after {
+    width: 100%;
+}
+header .icons img {
+    height: 25px;
+}
+
+   /* Historico de navegação */
+.breadcrumb {
+    background-color: #F1EDE8;
+    padding: 20px 80px;
+    font-size: 1em;
+    color: #666;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+   /* Fav */
+.favorites-container {
+    padding: 40px 80px;
+}
+.favorites-container h2 {
+    font-size: 3.5em;
+    font-family: 'Sacramento', cursive;
+    color: #8F7155;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: -20px;
+}
+.favorites-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.favorites-header, .favorite-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 50px 50px;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.favorites-header {
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+}
+.favorite-item img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+.favorite-item .material-symbols-outlined {
+    cursor: pointer;
+}
+  /* Rodapé */
+  
+  footer {
+    background-color: #F1EDE8;
+    color: #333;
+    padding: 20px 0;
+    font-size: 0.9em;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: -80px;
+  }
+  
+  
+  .footer-links, .footer-help, .footer-suggestions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-links h4, .footer-help h4, .footer-suggestions h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .footer-links ul, .footer-help ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li, .footer-help li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a, .footer-help a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-suggestions form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-suggestions input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  .footer-suggestions button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-suggestions button:hover {
+    background-color: #666;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #333;
+  }
+  /* Icones */
+
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+     font-weight: normal;
+     font-style: normal;
+     font-size: 35px;
+     margin: 10px;
+     line-height: 1;
+     letter-spacing: normal;
+     text-transform: none;
+     display: inline-block;
+     white-space: nowrap;
+     word-wrap: normal;
+     direction: ltr;
+     color: black;
+ }

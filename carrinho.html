@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Carrinho</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/bs.PNG" alt="BookStage"> 
+            <a href="home.html"><span class="title">BookStage</span></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="pagina-atual"><a href="home.html">Home</a></li>
+                <li><a href="acervo.html">Acervo</a></li>
+                <li><a href="editoras.html">Editoras</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="carrinho.html"><span class="material-symbols-outlined"> shopping_cart </span></a>
+            <a href="favoritos.html"><span class="material-symbols-outlined"> favorite </span></a>
+            <a href="perfil.html"><span class="material-symbols-outlined"> account_circle </span></a>
+        </div>
+    </header>
+    <div class="breadcrumb">
+      <a href="home.html">Home </a> <span>&rarr;</span> Carrinho
+  </div>
+    <main>
+        <section class="cart-container">
+            <section class="cart-details">
+                <h2>Detalhes do Carrinho</h2>
+                <div class="cart-table">
+                    <div class="cart-header">
+                        <span>Produto</span>
+                        <span>Valor</span>
+                        <span>Quantidade</span>
+                        <span>Total</span>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-info">
+                            <img src="img/livro1.jpg" alt="Livro 1">
+                            <p>Livro</p>
+                        </div>
+                        <p>R$50,00</p>
+                        <div class="quantity-controls">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                        <p>R$50,00</p>
+                        <button class="remove-item"><span class="material-symbols-outlined">
+                            delete_forever
+                            </span></button>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-info">
+                            <img src="img/livro1.jpg" alt="Livro 1">
+                            <p>Livro</p>
+                        </div>
+                        <p>R$50,00</p>
+                        <div class="quantity-controls">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                        <p>R$50,00</p>
+                        <button class="remove-item"><span class="material-symbols-outlined">
+                            delete_forever
+                            </span></button>
+                    </div>
+                    <div class="cart-item">
+                        <div class="product-info">
+                            <img src="img/livro1.jpg" alt="Livro 1">
+                            <p>Livro</p>
+                        </div>
+                        <p>R$50,00</p>
+                        <div class="quantity-controls">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                        <p>R$50,00</p>
+                        <button class="remove-item"><span class="material-symbols-outlined">
+                            delete_forever
+                            </span></button>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="cart-summary">
+                <h2>Total</h2>
+                <p>Quantidade de produtos: 3</p>
+                <hr class="section-divider">
+                <p>Valor Total: R$150,00</p>
+                <a href="checkout.html" ><button type="submit" class="continue-button">Continuar compra</button></a>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/bs2.PNG" alt="BookStage"> 
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="acervo.html">Acervo</a></li>
+                    <li><a href="editoras.html">Editoras</a></li>
+                    <li><a href="carrinho.html">Meu carrinho</a></li>
+                </ul>
+            </div>
+            <div class="footer-help">
+                <h4>Ajuda</h4>
+                <ul>
+                    <li><a href="#">Forum de Dúvidas</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-suggestions">
+                <h4>Deixe sua sugestão!</h4>
+                <form>
+                    <input type="text" placeholder="Sua sugestão">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2024, BookStage - Kaylla Jamily. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

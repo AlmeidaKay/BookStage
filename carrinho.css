@@ -1,0 +1,285 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCFAF9;
+    color: #333;
+  }
+
+     /* Cabeçalho */
+  .logo a {
+    text-decoration: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #F1EDE8;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  header .logo {
+    display: flex;
+    align-items: center;
+  }
+  header .logo img {
+    height: 70px;
+    margin-right: 10px; 
+  }
+  header .logo .title {
+    font-family: "Sacramento", cursive;
+    font-size: 2.5em;
+    color: #8F7155;
+    margin-right: 230px;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li {
+    margin: 0 20px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+    position: relative;
+  }
+  header nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: width .3s;
+  }
+  header nav ul li a:hover::after {
+    width: 100%;
+  }
+  header .icons img {
+    height: 25px;
+  }
+  
+     /* Historico de Navegação */
+  .breadcrumb {
+    background-color: #F1EDE8;
+    padding: 20px 80px;
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+     /* Carrinho */
+  .cart-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+  }
+  
+  .cart-details {
+    flex: 3;
+  }
+  
+  .cart-details h2 {
+    font-size: 2.5em;
+    font-family: 'Sacramento', cursive;
+    color: #8F7155;
+    margin-bottom: 20px;
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .cart-header, .cart-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 50px;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-header {
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+  }
+  
+  .cart-item img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .cart-item .product-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-item .product-info p {
+    margin-left: 10px;
+  }
+  .cart-summary h2 {
+    font-size: 2.5em;
+    font-family: 'Sacramento', cursive;
+    color: #8F7155;
+    margin-bottom: 20px;
+  }
+
+     /* Controle de qntdd */
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-controls button {
+    background-color: #8F7155;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .quantity-controls input {
+    width: 50px;
+    text-align: center;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .remove-item {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+     /* Informações finais */
+  .cart-summary {
+    position: relative;
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #F1EDE8;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .cart-summary p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .continue-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8F7155;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    margin-bottom: 15px;
+  }
+     /* Rodapé */
+  footer {
+    background-color: #F1EDE8;
+    padding: 30px 0;
+  }
+  
+  footer .footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 80px;
+  }
+  
+  footer .footer-logo img {
+    height: 100px;
+  }
+  
+  footer .footer-links ul, footer .footer-help ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer .footer-links ul li, footer .footer-help ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer .footer-links a, footer .footer-help a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  footer .footer-suggestions form {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer .footer-suggestions input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  footer .footer-suggestions button {
+    background-color: #8F7155;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }
+  /* Icones */
+
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+     font-weight: normal;
+     font-style: normal;
+     font-size: 35px;
+     margin: 10px;
+     line-height: 1;
+     letter-spacing: normal;
+     text-transform: none;
+     display: inline-block;
+     white-space: nowrap;
+     word-wrap: normal;
+     direction: ltr;
+     color: black;
+ }
